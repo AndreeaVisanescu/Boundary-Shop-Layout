@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Boundary Shop">
+    <meta name="keywords" content="shop, boundary">
+    <meta name="author" content="Andreea Visanescu">
+    <link rel="stylesheet" href="./resources/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet"> <!--font-family: 'Open Sans', sans-serif;-->
+    <title>Boundary Shop</title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <header class="free-shipping-header">
+            Free shipping on orders over $250
+        </header>
+
+        <nav class="navlist">
+            <div id="logoWrapper">
+                <img src="./assets/logo-vip.png" alt="logo" id="logo">
+            </div>
+            
+            <aside class="menuList">
+                <a class="menu-item selected" data-content="orders-container">Your Orders</a>
+                <a class="menu-item" data-content="reward-container">Reward Status</a>
+                <a class="menu-item" data-content="account-container">Account Settings</a>
+                <a class="menu-item" data-content="payment-container">Payment Methods</a> 
+                <a class="menu-item" data-content="sign-out-container">Sign Out</a>
+            </aside>
+        </nav>
+    
+        <section id="orders-container" class="content orders-container">
+            <h1 class="title-section">Your <br> Orders</h1>
+            <div class="orders-product">
+                <div class="backpack"><img src="./assets/product-1/product.png" alt="product"></div>
+                <div class="backpack-details">
+                    <div class="details1">
+                        <div>
+                            <h3>April 1, 2019</h3>
+                            <h2>Processing</h2>
+                        </div>
+
+                        <div>
+                            <h3>Order #</h3>
+                            <h2>30004</h2>
+                        </div>
+
+                        <div>
+                            <h3>Order Total</h3>
+                            <h2>$324.96</h2>
+                        </div>
+                    </div>
+
+                    <div class="details2">
+                        <span class="menu-item" data-content="order-details">Order Details</span> <br>
+                        <span id="order-cancel">Cancel</span> / <span id="order-modify">Modify</span>
+                    </div>
+                    <h3 class="title-more-info">Also in this order</h3>
+                    <div class="more-info">
+                        <div class="image-container"><img src="/assets/product-1/addition-1.png" alt="laptop"></div>
+                        <div class="image-container"><img src="/assets/product-1/addition-3.png" alt="hat"></div>
+                        <div class="image-container"><img src="/assets/product-1/addition-4.png" alt="belt"></div>
+                        <div class="image-container text">+3 more
+                            <div class="image-container hidden"><img src="#" alt="image4"></div>
+                            <div class="image-container hidden"><img src="#" alt="image5"></div>
+                            <div class="image-container hidden"><img src="#" alt="image5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order-details"  class="content order-details hidden">
+            <header>
+                <div class="logo-boundary"><img src="./assets/logo-boundary.png" alt="logo-boundary"></div>
+                <div class="shop"> SHOP
+                    <button><img src="/assets/icon-find.png" alt="search"></button>
+                    <button><img src="/assets/icon-cart-2.png" alt="cart"></button>
+                    <button><img src="/assets/icon-exit-3.png" alt="exit"></button>
+                </div>
+            </header>
+
+            <h6>Your Orders / Order #30002</h6>
+            <h4>Order Cancelled</h4>
+            <h1 class="title-section-orders">Order <br> Details</h1>
+
+            <div class="details-table">
+                <div class="divRow">
+                    <div class="divCell">Billing</div>
+                    <div class="divCell">
+                        <div class="cellRow">Rally Interactive</div>
+                        <div class="cellRow">244 W 300 N</div>
+                        <div class="cellRow">Salt Lake City, Utah 84103</div>
+                        <div class="cellRow">United States</div>
+                        <div class="cellRow">(801)643-3595</div>
+                    </div>
+                    <div class="divCell">
+                        <div class="cellRow">Payment Status:</div>
+                        <div class="cellRow">Refunded</div>
+                    </div>
+                </div> <br>
+
+                <div class="divRow2">
+                    <div class="divCell">Shipping</div>
+                    <div class="divCell">
+                        <div class="cellRow">Rally Interactive</div>
+                        <div class="cellRow">244 W 300 N</div>
+                        <div class="cellRow">Salt Lake City, Utah 84103</div>
+                        <div class="cellRow">United States</div>
+                        <div class="cellRow">(801)643-3595</div>
+                    </div>
+                    <div class="divCell">
+                        <div class="cellRow">Payment Status:</div>
+                        <div class="cellRow">Unfulfilled</div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="reward-container" class="content reward-container hidden">
+            <header>
+                <div class="logo-boundary"><img src="./assets/logo-boundary.png" alt="logo-boundary"></div>
+                <div class="shop"> SHOP
+                    <button><img src="/assets/icon-find.png" alt="search"></button>
+                    <button><img src="/assets/icon-cart-2.png" alt="cart"></button>
+                    <button><img src="/assets/icon-exit-3.png" alt="exit"></button>
+                </div>
+            </header>
+
+            <h1 class="title-section-reward">Reward <br> Status</h1>
+            <div class="details-table">
+                <div class="divRow2">
+                    <div class="divCell2"><b>Activity</b></div>
+                    <div class="divCell2">
+                        <div class="cellRow2">VIP</div>
+                        <div class="cellRow2 second">Current Status</div> <br>
+                        
+                        <div class="cellRow2">$ 678.42</div>
+                        <div class="cellRow2 second">Lifetime Spend</div> <br>
+                        
+                        <div class="cellRow2">003</div>
+                        <div class="cellRow2 second">Orders</div> <br>
+                    </div>
+                
+                    <div class="divCell2">
+                        <div class="cellRow2">GOLD</div>
+                        <div class="cellRow2 second">Next Tier</div> <br>
+
+                    <div class="cellRow2">$ 321.68</div>
+                        <div class="cellRow2 second">To Gold Status</div> <br>
+
+                        <div class="cellRow2">007</div>
+                        <div class="cellRow2 second">Referrals</div> <br>
+                    </div>
+                </div> <br>
+
+                <div class="divRow22">
+                    <div class="divCell2"><b>Benefits</b></div>
+                    <div class="divCell2 reward-icon-wrapper">
+                        <div class="cellRow2 logo-recurent"><img src="/assets/icon-recurrent.png" alt="recurent-icon"></div>
+                        <div class="cellRow2 logo-savings"><img src="/assets/icon-savings.png" alt="savings-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="account-container" class="content account-container hidden">
+            <header>
+                <div class="logo-boundary"><img src="./assets/logo-boundary.png" alt="logo-boundary"></div>
+                <div class="shop"> SHOP
+                    <button><img src="/assets/icon-find.png" alt="search"></button>
+                    <button><img src="/assets/icon-cart-2.png" alt="cart"></button>
+                    <button><img src="/assets/icon-exit-3.png" alt="exit"></button>
+                </div>
+            </header>
+
+            <h1 class="title-section-account">Account <br> Settings</h1>
+       
+            <form action="">Account
+                <div class="name-tel">
+                    <div>
+                        <label for="nameInput"></label>
+                        <input required class="input-validation" type="text" name="name_input" id="nameInput" placeholder="Ben Cline" />
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="+1 801 641 09">
+                    </div>
+                </div>
+                <div class="email-password">
+                    <div>
+                        <label for="emailInput"></label>
+                        <input class="input-validation" type="email" id="emailInput" placeholder="ben@rallyinteractive.com" />
+                    </div>
+                    <div>
+                        <label for="pwd"></label>
+                        <input type="password" id="pwd" name="pwd" placeholder="*************">
+                    </div>
+                </div>
+                <button type="submit">SAVE CHANGES</button>
+            </form>
+
+            <div class="more-infos">
+                <div class="address-title">Addresses</div>
+                <div class="infos-wrapper">
+                    <div>Ben Cline</div>
+                    <div>1234 S.Flestwood Mac Dr</div> 
+                    <div>Salt Lake City, UT B4109</div>  
+                    <div>United States</div>
+                    <div>+1 801 641 09</div>
+                </div>
+                <div class="infos-wrapper">
+                    <div>Ben Cline</div>
+                    <div>C/O Rally Interactive</div> 
+                    <div>Salt Lake City, UT B4109</div>  
+                    <div>United States</div>
+                    <div>+1 801 641 09</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="payment-container" class="content payment-container hidden">
+            <header>
+                <div class="logo-boundary"><img src="./assets/logo-boundary.png" alt="logo-boundary"></div>
+                <div class="shop"> SHOP
+                    <button><img src="/assets/icon-find.png" alt="search"></button>
+                    <button><img src="/assets/icon-cart-2.png" alt="cart"></button>
+                    <button><img src="/assets/icon-exit-3.png" alt="exit"></button>
+                </div>
+            </header>
+
+            <h1 class="title-section-payment">Payment <br> Methods</h1>
+       
+            <div class="cards-wrapper">
+                <div class="card-container"><img src="/assets/card-1.png" alt="card1"></div>
+                <div class="card-container"><img src="/assets/card-3.png" alt="card2"></div> 
+                <div class="card-container"><img src="/assets/card-2.png" alt="card3"></div>
+                <div class="card-container-icon"><img src="/assets/icon-plus.png" alt="add-cards"> ADD CARD</div>
+            </div>
+        </section>
+
+        <section id="sign-out-container" class="content sign-out-container hidden">
+
+        </section>
+    </div>
+    <script src="./resources/main.js"></script>
+    <noscript>
+        Your browser currently does not support or has JS disabled.
+    </noscript>
+</body>
+</html>
