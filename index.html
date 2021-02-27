@@ -39,6 +39,7 @@
                 <div class="backpack-details">
                     <div class="details1">
                         <div>
+                            <!-- aici avem doar informatii pe pagina, nu sunt neaparat titluri, nu trebuie sa fortam semantica -->
                             <h3>April 1, 2019</h3>
                             <h2>Processing</h2>
                         </div>
@@ -55,6 +56,7 @@
                     </div>
 
                     <div class="details2">
+                        <!-- din punct de vedere al interactiunii, aici ar fi ok sa avem link-uri, call-to-action pentru user, chiar daca functionalitatea implementata este limitata deocamdata -->
                         <span class="menu-item" data-content="order-details">Order Details</span> <br>
                         <span id="order-cancel">Cancel</span> / <span id="order-modify">Modify</span>
                     </div>
@@ -181,6 +183,7 @@
             <form action="">Account
                 <div class="name-tel">
                     <div>
+                        <!-- daca nu avem text pentru label nu ne ajuta, folosim degeaba elementul. mai ok sa avem text cu exact ce reprezinta si sa dam un display: none -->
                         <label for="nameInput"></label>
                         <input required class="input-validation" type="text" name="name_input" id="nameInput" placeholder="Ben Cline" />
                     </div>
